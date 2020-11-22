@@ -29,18 +29,15 @@ architecture arch of tb_ex02 is
             begin
                 a <= '0'; b <= '0'; c <= '0';
                 wait for 10 ns;
-                assert ((o = '0'));
-                report "test failed for input combination 000" severity error;
+                assert ((o = '0')) report "test failed for input combination 000" severity error;
 
                 a <= '1'; b <= '1'; c <= '1';
                 wait for 10 ns;
-                assert ((o = '1'));
-                report "test failed for input combination 111" severity error;
+                assert ((o = '1')) report "test failed for input combination 111" severity error;
 
                 a <= '0'; b <= '1'; c <= '0';
                 wait for 10 ns;
-                assert ((o = '0'));
-                report "test failed for input combination 010" severity error;
+                assert ((o = '0')) report "test failed for input combination 010" severity error;
         end process simulate;
 
 end architecture arch;

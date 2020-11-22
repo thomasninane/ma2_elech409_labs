@@ -1,0 +1,11 @@
+# Simulate the testbench
+vsim work.tb_halfAdder
+
+# Configure the wave window
+add wave a b s cOut
+
+# Run simulation
+run 80ns
+
+# Control the wave view
+wave zoom full
