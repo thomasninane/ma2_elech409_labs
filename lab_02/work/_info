@@ -1,0 +1,769 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Thomas_Data/Git/ma2_elech409_labs/lab_01
+Elc_4bitadder
+Z0 w1606067961
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Thomas_Data/Git/ma2_elech409_labs/lab_02
+Z4 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_4bitAdder.vhd
+Z5 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_4bitAdder.vhd
+l0
+L4
+VA5mhf_<AUz;mSR61d?l2S3
+!s100 5e2l>5OYKkeV>ldM;SHXJ0
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1606082928
+!i10b 1
+Z8 !s108 1606082928.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_4bitAdder.vhd|
+Z10 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_4bitAdder.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Aarch
+R1
+R2
+DEx4 work 12 lc_4bitadder 0 22 A5mhf_<AUz;mSR61d?l2S3
+l36
+L13
+VBOJ3FzYTmR]i=bZCL]fh^1
+!s100 bSXQ6@lk;SDjA@eoTHX:53
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Elc_ex01_fulladder
+Z13 w1606589507
+R1
+R2
+R3
+Z14 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex01_fullAdder.vhd
+Z15 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex01_fullAdder.vhd
+l0
+L4
+VHZJ9]inV`GfEgaLdTVI3@0
+!s100 j^1CFbGB:4F;n]=>c@kVY1
+R6
+32
+Z16 !s110 1606600553
+!i10b 1
+Z17 !s108 1606600553.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex01_fullAdder.vhd|
+Z19 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex01_fullAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 17 lc_ex01_fulladder 0 22 HZJ9]inV`GfEgaLdTVI3@0
+l15
+L14
+VM;G6a0F_3Bh`753a?0eO:2
+!s100 _[cjIUE2?9X3U;O2VCo>10
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Elc_ex01_halfadder
+Z20 w1606589482
+R1
+R2
+R3
+Z21 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex01_halfAdder.vhd
+Z22 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex01_halfAdder.vhd
+l0
+L4
+V;o@BAa3`IUFXhiF0QbEMQ3
+!s100 E=B`a>>2EZF<WI7A3h3V:1
+R6
+32
+Z23 !s110 1606600554
+!i10b 1
+R17
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex01_halfAdder.vhd|
+Z25 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex01_halfAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 17 lc_ex01_halfadder 0 22 ;o@BAa3`IUFXhiF0QbEMQ3
+l14
+L13
+V:DZW1X8Rl16lFTd<JSE<o3
+!s100 18KHQYKo0KF^bKUSi_>Wi1
+R6
+32
+R23
+!i10b 1
+R17
+R24
+R25
+!i113 1
+R11
+R12
+Elc_ex02_4bitripplecarryadder
+Z26 w1606589876
+R1
+R2
+R3
+Z27 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex02_4bitRippleCarryAdder.vhd
+Z28 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex02_4bitRippleCarryAdder.vhd
+l0
+L4
+VgIJ8E2QT_jQ`i6ng5za=A0
+!s100 l0KcYILC9;CHB4IcLkg;Q0
+R6
+32
+R23
+!i10b 1
+Z29 !s108 1606600554.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex02_4bitRippleCarryAdder.vhd|
+Z31 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex02_4bitRippleCarryAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 28 lc_ex02_4bitripplecarryadder 0 22 gIJ8E2QT_jQ`i6ng5za=A0
+l36
+L13
+Ve<1VKmUmifCo0`zKL2ciR0
+!s100 ^E0:n[>U85dm?Mhbh@AEk1
+R6
+32
+R23
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R11
+R12
+Elc_ex02_genericripplecarryadder
+Z32 w1606599964
+R1
+R2
+R3
+Z33 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex02_genericRippleCarryAdder.vhd
+Z34 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex02_genericRippleCarryAdder.vhd
+l0
+L4
+VnQCzzmkS7R@6_W2dfVRTe2
+!s100 =9j@e@^7X1`kO`eSEggUd0
+R6
+32
+R23
+!i10b 1
+R29
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex02_genericRippleCarryAdder.vhd|
+Z36 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex02_genericRippleCarryAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 31 lc_ex02_genericripplecarryadder 0 22 nQCzzmkS7R@6_W2dfVRTe2
+l37
+L14
+VcA]VnFcb;llgT1@g6N5Rj3
+!s100 ^S;[gg7KDSF?EzUHL^Cia3
+R6
+32
+R23
+!i10b 1
+R29
+R35
+R36
+!i113 1
+R11
+R12
+Elc_ex03_4bitcarrylookaheadadder
+Z37 w1606596072
+R1
+R2
+R3
+Z38 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex03_4bitCarryLookAheadAdder.vhd
+Z39 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex03_4bitCarryLookAheadAdder.vhd
+l0
+L4
+Vn65RJ^IA=NOe2m@CD8oWb1
+!s100 3a;ne9eY3EcW;A@P9:kjK2
+R6
+32
+R23
+!i10b 1
+R29
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex03_4bitCarryLookAheadAdder.vhd|
+Z41 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex03_4bitCarryLookAheadAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 31 lc_ex03_4bitcarrylookaheadadder 0 22 n65RJ^IA=NOe2m@CD8oWb1
+l34
+L16
+V7]<5hcV>z`5UFflJIlF5K1
+!s100 E>icln:zgHoMUUS:f9iMV3
+R6
+32
+R23
+!i10b 1
+R29
+R40
+R41
+!i113 1
+R11
+R12
+Elc_ex03_partialfulladder
+Z42 w1606595233
+R1
+R2
+R3
+Z43 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex03_partialFullAdder.vhd
+Z44 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex03_partialFullAdder.vhd
+l0
+L4
+V6=UZKUN[Jon_U5R52TGGd3
+!s100 1O5PVSk2=zJ`hA`aig8]G1
+R6
+32
+Z45 !s110 1606600555
+!i10b 1
+R29
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex03_partialFullAdder.vhd|
+Z47 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_ex03_partialFullAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 24 lc_ex03_partialfulladder 0 22 6=UZKUN[Jon_U5R52TGGd3
+l19
+L18
+VRhJciJ[k4j3442V8D^Z=71
+!s100 ]SePT3mjT`=H0Rg@<HTdU0
+R6
+32
+R45
+!i10b 1
+R29
+R46
+R47
+!i113 1
+R11
+R12
+Elc_fulladder
+Z48 w1606062453
+R1
+R2
+R3
+Z49 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_fullAdder.vhd
+Z50 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_fullAdder.vhd
+l0
+L4
+VJONEzEeS`XEY<aoKCo@@K2
+!s100 WF8oIZFlLfFJj?XCA`[dS1
+R6
+32
+R7
+!i10b 1
+R8
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_fullAdder.vhd|
+Z52 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_fullAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 12 lc_fulladder 0 22 JONEzEeS`XEY<aoKCo@@K2
+l15
+L14
+V]4Q`g9W:FMnAe7kC=?PG?1
+!s100 lO0n=<ga^S2a8XKnL9?`j1
+R6
+32
+R7
+!i10b 1
+R8
+R51
+R52
+!i113 1
+R11
+R12
+Elc_genericadder
+Z53 w1606074832
+R1
+R2
+R3
+Z54 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_genericAdder.vhd
+Z55 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_genericAdder.vhd
+l0
+L4
+VOV>JmhZeDo0ThWP]M`L?P1
+!s100 BTkcMKHEhB0Z[4kMEY`LU0
+R6
+32
+R7
+!i10b 1
+R8
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_genericAdder.vhd|
+Z57 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_genericAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 15 lc_genericadder 0 22 OV>JmhZeDo0ThWP]M`L?P1
+l37
+L14
+VjYlGPkNaZ6Bj=MdQM;OeN3
+!s100 _eE^in[L[n@MKP]Uk;JfM2
+R6
+32
+R7
+!i10b 1
+R8
+R56
+R57
+!i113 1
+R11
+R12
+Elc_halfadder
+Z58 w1606062455
+R1
+R2
+R3
+Z59 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_halfAdder.vhd
+Z60 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_halfAdder.vhd
+l0
+L4
+VM0E2DI=fMX7B:>VYDc68e3
+!s100 4XhK`JdB7]d9h]9d?1=_@1
+R6
+32
+R7
+!i10b 1
+Z61 !s108 1606082927.000000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_halfAdder.vhd|
+Z63 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/lc_halfAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 12 lc_halfadder 0 22 M0E2DI=fMX7B:>VYDc68e3
+l14
+L13
+VmnW2zdYf6`[QIAH`0<HV@1
+!s100 >fNnLoJ;z^im:T6fT>Ibl0
+R6
+32
+R7
+!i10b 1
+R61
+R62
+R63
+!i113 1
+R11
+R12
+Etb_4bitadder
+Z64 w1606076052
+Z65 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+Z66 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_4bitAdder.vhd
+Z67 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_4bitAdder.vhd
+l0
+L5
+V?icX<]3ae?^WjL4OI1_9`3
+!s100 Ai;oo^`hMN>V8P^FRMKAZ0
+R6
+32
+R7
+!i10b 1
+R8
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_4bitAdder.vhd|
+Z69 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_4bitAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R65
+R1
+R2
+DEx4 work 12 tb_4bitadder 0 22 ?icX<]3ae?^WjL4OI1_9`3
+l22
+L8
+V:iWC:cj0@?fLJlT6:WP[o0
+!s100 ;z7l3Vd1UdW4?F@U`RHBc3
+R6
+32
+R7
+!i10b 1
+R8
+R68
+R69
+!i113 1
+R11
+R12
+Etb_ex01_fulladder
+Z70 w1606589556
+R1
+R2
+R3
+Z71 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex01_fullAdder.vhd
+Z72 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex01_fullAdder.vhd
+l0
+L4
+V>909RTmd3HP[:`jnzOX]<1
+!s100 =nEUOOjCQVo7QiTo;cD2`0
+R6
+32
+R23
+!i10b 1
+R29
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex01_fullAdder.vhd|
+Z74 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex01_fullAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 17 tb_ex01_fulladder 0 22 >909RTmd3HP[:`jnzOX]<1
+l21
+L7
+V0zL<3U3l_:6fL`68J6SBe3
+!s100 BDf4cnz?GPe1bJmDbnRz30
+R6
+32
+R23
+!i10b 1
+R29
+R73
+R74
+!i113 1
+R11
+R12
+Etb_ex01_halfadder
+Z75 w1606589607
+R1
+R2
+R3
+Z76 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex01_halfAdder.vhd
+Z77 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex01_halfAdder.vhd
+l0
+L4
+V_9ajIQhJW]I2MAUJASeLj0
+!s100 8_<29=bWE=zzSmZZZDHHg1
+R6
+32
+R23
+!i10b 1
+R29
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex01_halfAdder.vhd|
+Z79 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex01_halfAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 17 tb_ex01_halfadder 0 22 _9ajIQhJW]I2MAUJASeLj0
+l20
+L7
+VhogDYET0V04e?cUIgb1ml3
+!s100 C1IhkkWj6`UMzY35RFnOa1
+R6
+32
+R23
+!i10b 1
+R29
+R78
+R79
+!i113 1
+R11
+R12
+Etb_ex02_4bitripplecarryadder
+Z80 w1606599074
+Z81 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R65
+R1
+R2
+R3
+Z82 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex02_4bitRippleCarryAdder.vhd
+Z83 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex02_4bitRippleCarryAdder.vhd
+l0
+L8
+Vblh[3C_iZQzIUoJNd6f8`0
+!s100 4G7cE<49dZFPE9nlb6PI=0
+R6
+32
+R23
+!i10b 1
+R29
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex02_4bitRippleCarryAdder.vhd|
+Z85 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex02_4bitRippleCarryAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R81
+R65
+R1
+R2
+DEx4 work 28 tb_ex02_4bitripplecarryadder 0 22 blh[3C_iZQzIUoJNd6f8`0
+l27
+L11
+VRWF5cMlAO?Mk=KBFCVRFV3
+!s100 P3fkSi<B8?2a`5EiPGSIE3
+R6
+32
+R23
+!i10b 1
+R29
+R84
+R85
+!i113 1
+R11
+R12
+Etb_ex02_genericripplecarryadder
+Z86 w1606600521
+R81
+R65
+R1
+R2
+R3
+Z87 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex02_genericRippleCarryAdder.vhd
+Z88 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex02_genericRippleCarryAdder.vhd
+l0
+L13
+V;UY^eI@WR30F4WdM0Yo;:1
+!s100 UCe:BCjF7J5O9WU<c2^>?0
+R6
+32
+R16
+!i10b 1
+R17
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex02_genericRippleCarryAdder.vhd|
+Z90 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex02_genericRippleCarryAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R81
+R65
+R1
+R2
+DEx4 work 31 tb_ex02_genericripplecarryadder 0 22 ;UY^eI@WR30F4WdM0Yo;:1
+l36
+L17
+Vl>:A>7lDfD1SgckQ`El0K3
+!s100 <o^I[N]TN4k]cHI<Bmo5k3
+R6
+32
+R16
+!i10b 1
+R17
+R89
+R90
+!i113 1
+R11
+R12
+Etb_ex03_4bitcarrylookaheadadder
+Z91 w1606599534
+R81
+R65
+R1
+R2
+R3
+Z92 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex03_4bitCarryLookAheadAdder.vhd
+Z93 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex03_4bitCarryLookAheadAdder.vhd
+l0
+L8
+VNMQZLFcaSJECTHD>hKH_c0
+!s100 S`nI8PB3<BCB=c?P=Xfgo1
+R6
+32
+R45
+!i10b 1
+Z94 !s108 1606600555.000000
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex03_4bitCarryLookAheadAdder.vhd|
+Z96 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_ex03_4bitCarryLookAheadAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R81
+R65
+R1
+R2
+Z97 DEx4 work 31 tb_ex03_4bitcarrylookaheadadder 0 22 NMQZLFcaSJECTHD>hKH_c0
+l30
+L11
+Z98 VCk7@`TCYfUbD53MH;9z7D2
+Z99 !s100 J8ZhN1@<D[o^H1>QKDJYZ0
+R6
+32
+R45
+!i10b 1
+R94
+R95
+R96
+!i113 1
+R11
+R12
+Etb_fulladder
+Z100 w1606064585
+R1
+R2
+R3
+Z101 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_fullAdder.vhd
+Z102 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_fullAdder.vhd
+l0
+L4
+V@E2Lz>FZ1iOUk692Jo:DQ0
+!s100 Z_5kWf;d^K6Z@G:Yl9IC]3
+R6
+32
+R7
+!i10b 1
+R8
+Z103 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_fullAdder.vhd|
+Z104 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_fullAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 12 tb_fulladder 0 22 @E2Lz>FZ1iOUk692Jo:DQ0
+l21
+L7
+VFZl;6RFgZ_=OfdBGnSkZ53
+!s100 k9lFY=OI24UbI=I[@VgA50
+R6
+32
+R7
+!i10b 1
+R8
+R103
+R104
+!i113 1
+R11
+R12
+Etb_genericadder
+Z105 w1606082916
+R81
+R65
+R1
+R2
+R3
+Z106 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_genericAdder.vhd
+Z107 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_genericAdder.vhd
+l0
+L13
+VAmQZk2Gj9n1ZL7^157EAn1
+!s100 =>O?cdAj:hM7NCI`FY9<f0
+R6
+32
+Z108 !s110 1606082929
+!i10b 1
+R8
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_genericAdder.vhd|
+Z110 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_genericAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R81
+R65
+R1
+R2
+DEx4 work 15 tb_genericadder 0 22 AmQZk2Gj9n1ZL7^157EAn1
+l33
+L17
+ViYHWH>Q<?RZ@nKFJbdPFH1
+!s100 7^1^JN9czZ@N3LZddX60=3
+R6
+32
+R108
+!i10b 1
+R8
+R109
+R110
+!i113 1
+R11
+R12
+Etb_halfadder
+Z111 w1606064442
+R1
+R2
+R3
+Z112 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_halfAdder.vhd
+Z113 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_halfAdder.vhd
+l0
+L4
+VQHhjk4c6CLb6BTMaP;;c92
+!s100 3T64OW]_N=b8azcP]UX8M2
+R6
+32
+R7
+!i10b 1
+R8
+Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_halfAdder.vhd|
+Z115 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_02/tb_halfAdder.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 12 tb_halfadder 0 22 QHhjk4c6CLb6BTMaP;;c92
+l20
+L7
+VH9G_kibi7gm`G_GjkXjQm0
+!s100 o:7oZ?lZF2n`4f1E@Mm>G2
+R6
+32
+R7
+!i10b 1
+R8
+R114
+R115
+!i113 1
+R11
+R12

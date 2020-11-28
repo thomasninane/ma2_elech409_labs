@@ -1,0 +1,14 @@
+# Simulate the testbench
+vsim work.tb_ex02_genericRippleCarryAdder
+
+# Configure the wave window
+add wave a b s cOut
+
+# Run simulation (time: 2^N * 2^N with N = 4)
+# 4-bits --> 2560ns
+# 8-bits --> 655360ns
+# 16-bits --> 42949672960ns
+run 2560ns
+
+# Control the wave view
+wave zoom full
