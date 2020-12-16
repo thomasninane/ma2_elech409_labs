@@ -1,0 +1,11 @@
+# Simulate the testbench
+vsim work.tb_ex02p02_parallelRegister
+
+# Configure the wave window
+add wave d load q
+
+# Run simulation
+run 40ns
+
+# Control the wave view
+wave zoom full

@@ -1,0 +1,11 @@
+# Simulate the testbench
+vsim work.tb_ex02p01_shiftRegister
+
+# Configure the wave window
+add wave d En q
+
+# Run simulation
+run 80ns
+
+# Control the wave view
+wave zoom full
