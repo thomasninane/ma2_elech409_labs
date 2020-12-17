@@ -1,0 +1,11 @@
+# Simulate the testbench
+vsim work.tb_ex03_counter
+
+# Configure the wave window
+add wave up rst clk q
+
+# Run simulation
+run 340ns
+
+# Control the wave view
+wave zoom full

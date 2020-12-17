@@ -19,17 +19,7 @@ architecture arch of lc_ex02p02_parallelRegister is
         proc: process(LOAD)
             begin
                 if (LOAD = '1') then
-
-                    -- for i in 0 to N-1 loop
-                    --     Q(i) <= parallel_register(i-1);
-                    -- end loop;
-
-                    -- for i in 0 to N-1 loop
-                    --     parallel_register(i) <= D(i);
-                    -- end loop;
-                    
-                    Q <= parallel_register;
-                    parallel_register <= D;
+                    Q <= D;
                 end if;
         end process proc;
 
