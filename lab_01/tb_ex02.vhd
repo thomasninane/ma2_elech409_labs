@@ -8,36 +8,36 @@ architecture arch of tb_ex02 is
     
     component lc_ex02 is
         port(
-            in1: in std_logic;
-            in2: in std_logic;
-            in3: in std_logic;
-            out1: out std_logic
+            IN_1: in std_logic;
+            IN_2: in std_logic;
+            IN_3: in std_logic;
+            OUT_1: out std_logic
         );
     end component lc_ex02;
 
-    signal a, b, c, o: std_logic;
+    signal in_1, in_2, in_3, out_1: std_logic;
 
     begin
         uut: lc_ex02 port map(
-            in1 => a,
-            in2 => b,
-            in3 => c,
-            out1 => o
+            IN_1 => in_1,
+            IN_2 => in_2,
+            IN_3 => in_3,
+            OUT_1 => out_1
         );
 
         simulate: process
             begin
-                a <= '0'; b <= '0'; c <= '0';
+                in_1 <= '0'; in_2 <= '0'; in_3 <= '0';
                 wait for 10 ns;
-                assert ((o = '0')) report "test failed for input combination 000" severity error;
+                assert ((out_1 = '0')) report "test failed for input combination 000" severity error;
 
-                a <= '1'; b <= '1'; c <= '1';
+                in_1 <= '1'; in_2 <= '1'; in_3 <= '1';
                 wait for 10 ns;
-                assert ((o = '1')) report "test failed for input combination 111" severity error;
+                assert ((out_1 = '1')) report "test failed for input combination 111" severity error;
 
-                a <= '0'; b <= '1'; c <= '0';
+                in_1 <= '0'; in_2 <= '1'; in_3 <= '0';
                 wait for 10 ns;
-                assert ((o = '0')) report "test failed for input combination 010" severity error;
+                assert ((out_1 = '0')) report "test failed for input combination 010" severity error;
         end process simulate;
 
 end architecture arch;

@@ -9,25 +9,25 @@ architecture arch of tb_ex05 is
 
     component lc_ex05 is
         port(
-            in1: in std_logic;
-            in2: in std_logic;
-            in3: in std_logic;
-            out1: out std_logic;
-            out2: out std_logic;
-            out3: out std_logic
+            IN_1: in std_logic;
+            IN_2: in std_logic;
+            IN_3: in std_logic;
+            OUT_1: out std_logic;
+            OUT_2: out std_logic;
+            OUT_3: out std_logic
         );
     end component lc_ex05;
 
-    signal a, b, c, o1, o2, o3: std_logic;
+    signal in_1, in_2, in_3, out_1, out_2, out_3: std_logic;
 
     begin
         uut: lc_ex05 port map(
-            in1 => a,
-            in2 => b,
-            in3 => c,
-            out1 => o1,
-            out2 => o2,
-            out3 => o3
+            IN_1 => in_1,
+            IN_2 => in_2,
+            IN_3 => in_3,
+            OUT_1 => out_1,
+            OUT_2 => out_2,
+            OUT_3 => out_3
         );
 
         simulate: process
@@ -36,9 +36,9 @@ architecture arch of tb_ex05 is
                 for i in 0 to 7 loop
                     inputs := std_logic_vector(to_unsigned(i, inputs'length));
 
-                    a <= inputs(0);
-                    b <= inputs(1);
-                    c <= inputs(2);
+                    in_1 <= inputs(0);
+                    in_2 <= inputs(1);
+                    in_3 <= inputs(2);
                     wait for 10 ns;
                 end loop;        
         end process simulate;

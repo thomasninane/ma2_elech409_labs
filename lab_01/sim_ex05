@@ -2,7 +2,7 @@
 vsim work.tb_ex05
 
 # Configure the wave window
-add wave a b c o1 o2 o3
+add wave in_1 in_2 in_3 out_1 out_2 out_3
 
 # Run simulation
 run 80ns
