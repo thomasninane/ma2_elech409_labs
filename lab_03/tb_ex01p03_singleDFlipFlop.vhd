@@ -10,7 +10,7 @@ architecture arch of tb_ex01p03_singleDFlipFlop is
         port(
             D: in std_logic;
             Q: out std_logic;
-            Clk: in std_logic
+            CLK: in std_logic
         );
     end component lc_ex01p03_singleDFlipFlop;
 
@@ -22,7 +22,7 @@ architecture arch of tb_ex01p03_singleDFlipFlop is
         uut: lc_ex01p03_singleDFlipFlop port map(
             D => d,
             Q => q,
-            Clk => clk
+            CLK => clk
         );
 
         simulate: process
