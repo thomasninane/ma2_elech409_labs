@@ -6,7 +6,7 @@ entity lc_ex02 is
         RESET: in std_logic;
         CLK: in std_logic;
         ENABLE: in std_logic;
-        O: out std_logic_vector(1 downto 0)
+        OUT_1: out std_logic_vector(1 downto 0)
     );
 end entity lc_ex02;
 
@@ -25,16 +25,16 @@ architecture arch of lc_ex02 is
             begin
                 case current_state is
                     when state_zero =>
-                        O <= "00";
+                        OUT_1 <= "00";
                         next_state <= state_one;
                     when state_one =>
-                        O <= "01";
+                        OUT_1 <= "01";
                         next_state <= state_two;
                     when state_two =>
-                        O <= "10";
+                        OUT_1 <= "10";
                         next_state <= state_three;
                     when state_three =>
-                        O <= "11";
+                        OUT_1 <= "11";
                         next_state <= state_zero;
                 end case;
         end process compute_next_state;

@@ -2,7 +2,7 @@
 vsim work.tb_ex03
 
 # Configure the wave window
-add wave reset clk enable up o
+add wave reset clk enable up out_1
 
 # Run simulation
 run 220ns
