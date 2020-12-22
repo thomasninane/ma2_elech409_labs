@@ -1,0 +1,244 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Thomas_Data/Git/ma2_elech409_labs/lab_03
+Elc_ex01
+Z0 w1608577997
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Thomas_Data/Git/ma2_elech409_labs/lab_04
+Z4 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd
+Z5 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd
+l0
+L4
+V]lBYMO5`4]BhobK2G2?M`1
+!s100 S]JK`Lm_EBWmE3UKJJ2XG0
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1608628738
+!i10b 1
+Z8 !s108 1608628738.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd|
+Z10 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Aarch
+R1
+R2
+DEx4 work 7 lc_ex01 0 22 ]lBYMO5`4]BhobK2G2?M`1
+l18
+L13
+Vkmg5R4W_mN^g6Va5iC^<Z1
+!s100 lHgYkC<Sen[PkBW]63hZM2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Elc_ex02
+Z13 w1608626032
+R1
+R2
+R3
+Z14 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd
+Z15 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd
+l0
+L4
+VTfb<>T@6Bc]jbTD?<bI370
+!s100 ah3<eF1aKAn:d7W2`76Dg0
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd|
+Z17 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 7 lc_ex02 0 22 Tfb<>T@6Bc]jbTD?<bI370
+l21
+L13
+V@[[Vi=[hJ0O@7^6cjD7Sa0
+!s100 M=J@5:?UXJN6E9<TKKH6M3
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Elc_ex03
+Z18 w1608628394
+R1
+R2
+R3
+Z19 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd
+Z20 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd
+l0
+L4
+Vl]S>]b4;z4Cz8hWIj23@;2
+!s100 8SPfYiJQlnQ9N1zBWSACF2
+R6
+32
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd|
+Z22 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 7 lc_ex03 0 22 l]S>]b4;z4Cz8hWIj23@;2
+l22
+L14
+VWTBXYb07F`HZ2F3KWKUX_1
+!s100 bLQ;2hGEi6=hF66iZUS191
+R6
+32
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Etb_ex01
+Z23 w1608549974
+R1
+R2
+R3
+Z24 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd
+Z25 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd
+l0
+L4
+VGG5EdeF<eXzf[R@^gP5[T3
+!s100 aYI1DQN23NiiZVz[W5CRn2
+R6
+32
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd|
+Z27 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 7 tb_ex01 0 22 GG5EdeF<eXzf[R@^gP5[T3
+l22
+L8
+VWKMS0k51hVeUDV`0>]>Lm1
+!s100 ZbmN]:@];]S?>5l=6FmCL3
+R6
+32
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Etb_ex02
+Z28 w1608628732
+R1
+R2
+R3
+Z29 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd
+Z30 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd
+l0
+L4
+VT<5ePU:1:G4GY5E:Vm@HR0
+!s100 Y=BlX;Q[[@fAmT`o9I09o1
+R6
+32
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd|
+Z32 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+DEx4 work 7 tb_ex02 0 22 T<5ePU:1:G4GY5E:Vm@HR0
+l24
+L8
+V:AI4MoKI6@_Fa_7I2lZ;F0
+!s100 :Q@EYVz0ik[3i`[O1DB@V2
+R6
+32
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Etb_ex03
+Z33 w1608628482
+R1
+R2
+R3
+Z34 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd
+Z35 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd
+l0
+L4
+V;j^RFMb8NF?[k538@FCEi0
+!s100 OXelU`N=:UQDm:aZdX[Jc3
+R6
+32
+R7
+!i10b 1
+R8
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd|
+Z37 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd|
+!i113 1
+R11
+R12
+Aarch
+R1
+R2
+Z38 DEx4 work 7 tb_ex03 0 22 ;j^RFMb8NF?[k538@FCEi0
+l26
+L8
+Z39 V1UWjo`eA0Iij39_;g@`8^1
+Z40 !s100 V[HLGmKLad_nM1WeDTSaT0
+R6
+32
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
