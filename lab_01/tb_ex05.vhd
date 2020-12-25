@@ -30,7 +30,7 @@ architecture arch of tb_ex05 is
             OUT_3 => out_3
         );
 
-        simulate: process
+        stim: process
             variable inputs: std_logic_vector(2 downto 0);
             begin
                 for i in 0 to 7 loop
@@ -40,7 +40,10 @@ architecture arch of tb_ex05 is
                     in_2 <= inputs(1);
                     in_3 <= inputs(2);
                     wait for 10 ns;
-                end loop;        
-        end process simulate;
+                    
+                end loop;
+                
+                wait;
+        end process stim;
 
 end architecture arch;

@@ -25,7 +25,7 @@ architecture arch of tb_ex01p02_truthTable is
             SEL => sel
         );
 
-        simulate: process
+        stim: process
             begin
 
                 d <= "1010";    -- d(3)=1, d(2)=0, d(1)=1, d(0)=0
@@ -50,6 +50,8 @@ architecture arch of tb_ex01p02_truthTable is
                 wait for 10 ns;
                 assert((q = '0')) report "Test failed for sel=11" severity error;
 
-        end process simulate;
+                wait;
+
+        end process stim;
 
 end architecture arch;

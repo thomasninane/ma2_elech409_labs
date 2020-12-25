@@ -2,10 +2,10 @@
 vsim work.tb_ex02p01_shiftRegister
 
 # Configure the wave window
-add wave d En q
+add wave clk reset enable d q
 
 # Run simulation
-run 80ns
+run 150ns
 
 # Control the wave view
 wave zoom full

@@ -4,8 +4,10 @@ use ieee.std_logic_1164.all;
 entity lc_ex02p01_shiftRegister is
     generic (N: integer := 4);
     port(
+        CLK: in std_logic;
+        RESET: in std_logic;
+        ENABLE: in std_logic;
         D: in std_logic;
-        EN: in std_logic;
         Q: out std_logic
     );
 end entity lc_ex02p01_shiftRegister;
@@ -16,20 +18,21 @@ architecture arch of lc_ex02p01_shiftRegister is
 
     begin
 
-        proc: process(EN)
+        proc: process(RESET, CLK)
             begin
-                if (EN = '1') then
-                    Q <= shift_register(N-1);
+                if RESET = '1' then
+                    shift_register <= (others => '0');
+                    Q <= '0';
 
-                    -- for i in N-1 to 1 loop
-                    --     shift_register(i) <= shift_register(i-1);
-                    -- end loop;
-
-                    for i in 1 to N-1 loop
-                        shift_register(i) <= shift_register(i-1);
-                    end loop;
-
-                    shift_register(0) <= D;
+                elsif rising_edge(CLK) then
+                    if ENABLE = '1' then
+                        Q <= shift_register(N-1);
+                        shift_register(0) <= D;
+                        
+                        for i in 1 to N-1 loop
+                            shift_register(i) <= shift_register(i-1);
+                        end loop;   
+                    end if; 
                 end if;
         end process proc;
 

@@ -25,19 +25,21 @@ architecture arch of tb_ex02 is
             OUT_1 => out_1
         );
 
-        simulate: process
+        stim: process
             begin
                 in_1 <= '0'; in_2 <= '0'; in_3 <= '0';
                 wait for 10 ns;
-                assert ((out_1 = '0')) report "test failed for input combination 000" severity error;
+                assert out_1 = '0' report "Test failed for input combination 000" severity error;
 
                 in_1 <= '1'; in_2 <= '1'; in_3 <= '1';
                 wait for 10 ns;
-                assert ((out_1 = '1')) report "test failed for input combination 111" severity error;
+                assert out_1 = '1' report "Test failed for input combination 111" severity error;
 
                 in_1 <= '0'; in_2 <= '1'; in_3 <= '0';
                 wait for 10 ns;
-                assert ((out_1 = '0')) report "test failed for input combination 010" severity error;
-        end process simulate;
+                assert out_1 = '0' report "Test failed for input combination 010" severity error;
+
+                wait;
+        end process stim;
 
 end architecture arch;

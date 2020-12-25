@@ -2,7 +2,7 @@
 vsim work.tb_ex01p03_singleDFlipFlop
 
 # Configure the wave window
-add wave d clk q
+add wave clk reset enable d q
 
 # Run simulation
 run 80ns

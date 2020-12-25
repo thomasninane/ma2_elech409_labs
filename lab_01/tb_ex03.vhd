@@ -29,31 +29,41 @@ architecture arch of tb_ex03 is
             OUT_3 => out_3
         );
 
-        simulate: process
+        stim: process
             begin
                 in_1 <= '0'; in_2 <= '0'; in_3 <= '0';
                 wait for 10 ns;
+                assert out_1 = '0' and out_2 = '0' and out_3 = '0' report "Test failed for input combination 000" severity error;
 
                 in_1 <= '0'; in_2 <= '0'; in_3 <= '1';
                 wait for 10 ns;
+                assert out_1 = '0' and out_2 = '0' and out_3 = '1' report "Test failed for input combination 001" severity error;
 
                 in_1 <= '0'; in_2 <= '1'; in_3 <= '0';
                 wait for 10 ns;
+                assert out_1 = '0' and out_2 = '0' and out_3 = '1' report "Test failed for input combination 010" severity error;
 
                 in_1 <= '0'; in_2 <= '1'; in_3 <= '1';
                 wait for 10 ns;
+                assert out_1 = '0' and out_2 = '1' and out_3 = '1' report "Test failed for input combination 011" severity error;
 
                 in_1 <= '1'; in_2 <= '0'; in_3 <= '0';
                 wait for 10 ns;
+                assert out_1 = '0' and out_2 = '0' and out_3 = '1' report "Test failed for input combination 100" severity error;
 
                 in_1 <= '1'; in_2 <= '0'; in_3 <= '1';
                 wait for 10 ns;
+                assert out_1 = '0' and out_2 = '0' and out_3 = '1' report "Test failed for input combination 101" severity error;
 
                 in_1 <= '1'; in_2 <= '1'; in_3 <= '0';
                 wait for 10 ns;
+                assert out_1 = '1' and out_2 = '0' and out_3 = '1' report "Test failed for input combination 110" severity error;
 
                 in_1 <= '1'; in_2 <= '1'; in_3 <= '1';
                 wait for 10 ns;
-        end process simulate;
+                assert out_1 = '1' and out_2 = '1' and out_3 = '1' report "Test failed for input combination 111" severity error;
+
+                wait;
+        end process stim;
 
 end architecture arch;
