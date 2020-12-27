@@ -25,27 +25,30 @@ architecture arch of tb_ex01_halfAdder is
             cOut => cOut
         );
 
-        simulate: process
+        stim: process
             begin
                 a <= '0'; b <= '0';
                 wait for 10 ns;
-                assert((s = '0')) report "Test failed for input combination 00 (s)" severity error;
-                assert((cOut = '0')) report "Test failed for input combination 00 (cOut)" severity error;
+                assert s = '0' report "Test failed for input combination 00 (s)" severity error;
+                assert cOut = '0' report "Test failed for input combination 00 (cOut)" severity error;
 
                 a <= '0'; b <= '1';
                 wait for 10 ns;
-                assert((s = '1')) report "Test failed for input combination 01 (s)" severity error;
-                assert((cOut = '0')) report "Test failed for input combination 01 (cOut)" severity error;
+                assert s = '1' report "Test failed for input combination 01 (s)" severity error;
+                assert cOut = '0' report "Test failed for input combination 01 (cOut)" severity error;
 
                 a <= '1'; b <= '0';
                 wait for 10 ns;
-                assert((s = '1')) report "Test failed for input combination 10 (s)" severity error;
-                assert((cOut = '0')) report "Test failed for input combination 10 (cOut)" severity error;
+                assert s = '1' report "Test failed for input combination 10 (s)" severity error;
+                assert cOut = '0' report "Test failed for input combination 10 (cOut)" severity error;
 
                 a <= '1'; b <= '1';
                 wait for 10 ns;
-                assert((s = '0')) report "Test failed for input combination 11 (s)" severity error;
-                assert((cOut = '1')) report "Test failed for input combination 11 (cOut)" severity error;
-        end process simulate;
+                assert s = '0' report "Test failed for input combination 11 (s)" severity error;
+                assert cOut = '1' report "Test failed for input combination 11 (cOut)" severity error;
+
+                wait;
+                
+        end process stim;
 
 end architecture arch;

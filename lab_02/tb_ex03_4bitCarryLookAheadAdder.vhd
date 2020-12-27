@@ -2,15 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;   -- to unsigned(integer_to_convert, length_of_vector)
 
-use std.textio.all;
-use ieee.std_logic_textio.all;
-
 entity tb_ex03_4bitCarryLookAheadAdder is
 end entity tb_ex03_4bitCarryLookAheadAdder;
 
 architecture arch of tb_ex03_4bitCarryLookAheadAdder is
-
-    file output_buf : text;  -- text is keyword
 
     component lc_ex03_4bitCarryLookAheadAdder is
         port(
@@ -36,15 +31,12 @@ architecture arch of tb_ex03_4bitCarryLookAheadAdder is
             cOut => cOut
         );
 
-        simulate: process
+        stim: process
 
-            variable write_col_to_output_buf : line; -- line is keyword
+            variable sum: integer := 0;
+            variable sum_vec: std_logic_vector(4 downto 0) := (others => '0');  -- 4 downto 0 and not 3 downto 0 (c.f. assertions)
 
             begin
-
-                file_open(output_buf, "sim_results/tb_ex03_4bitCarryLookAheadAdder.txt",  write_mode);
-                write(write_col_to_output_buf, string'("Start of simulation"));
-                writeline(output_buf, write_col_to_output_buf);
 
                 for i in 0 to 15 loop
                     for j in 0 to 15 loop
@@ -53,38 +45,17 @@ architecture arch of tb_ex03_4bitCarryLookAheadAdder is
                         b <= std_logic_vector(to_unsigned(j, b'length));
                         wait for 10 ns;
 
-                        -- Write to file
-                        write(write_col_to_output_buf, string'("a_vec="));
-                        write(write_col_to_output_buf, a);
-                        write(write_col_to_output_buf, string'(", b_vec="));
-                        write(write_col_to_output_buf, b);
-                        write(write_col_to_output_buf, string'(", s_vec="));
-                        write(write_col_to_output_buf, s);
-                        write(write_col_to_output_buf, string'(", cOut="));
-                        write(write_col_to_output_buf, cOut);
-
-                        write(write_col_to_output_buf, HT);
-                        write(write_col_to_output_buf, string'("a_int="));
-                        write(write_col_to_output_buf, i);
-                        write(write_col_to_output_buf, string'(", b_int="));
-                        write(write_col_to_output_buf, j);
-                        write(write_col_to_output_buf, string'(", s_int="));
-                        write(write_col_to_output_buf, to_integer(unsigned(s)));
-                        write(write_col_to_output_buf, string'(", cOut="));
-                        write(write_col_to_output_buf, cOut);
-
-                        writeline(output_buf, write_col_to_output_buf); 
+                        sum := i + j;
+                        sum_vec := std_logic_vector(to_unsigned(sum, sum_vec'length));
+                        assert sum_vec(4) = cOut and sum_vec(3) = s(3) and sum_vec(2) = s(2) and sum_vec(1) = s(1) and sum_vec(0) = s(0)
+                        report "Test failed for i = " & integer'image(i) & " and j = " & integer'image(j) severity error;
 
                     end loop;
                 end loop;
 
-                -- Close the file containing the results
-                write(write_col_to_output_buf, string'("End of simulation"));
-                writeline(output_buf, write_col_to_output_buf);
-                wait for 100ns;
-                file_close(output_buf);
+            wait;
 
-        end process simulate;
+        end process stim;
 
 end architecture arch;
 

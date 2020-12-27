@@ -2,9 +2,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;   -- to unsigned(integer_to_convert, length_of_vector)
 
-use std.textio.all;
-use ieee.std_logic_textio.all;
-
 -- Before launching the simulation:
 -- change the number of bits: N_tb
 -- change the filename where the results are written
@@ -15,8 +12,6 @@ entity tb_ex02_genericRippleCarryAdder is
 end entity tb_ex02_genericRippleCarryAdder;
 
 architecture arch of tb_ex02_genericRippleCarryAdder is
-
-    file output_buf : text;  -- text is keyword
 
     component lc_ex02_genericRippleCarryAdder is
         generic(
@@ -45,15 +40,13 @@ architecture arch of tb_ex02_genericRippleCarryAdder is
             cOut => cOut
         );
 
-        simulate: process
+        stim: process
 
-            variable write_col_to_output_buf : line; -- line is keyword
+            variable sum: integer := 0;
+            variable sum_vec: std_logic_vector(N_tb downto 0) := (others => '0');  -- N_tb downto 0 and not N_tb-1 downto 0 (c.f. assertions)
+            variable res_concat: std_logic_vector(N_tb downto 0) := (others => '0');
 
             begin
-
-                file_open(output_buf, "sim_results/tb_ex02_genericRippleCarryAdder_N4.txt",  write_mode);
-                write(write_col_to_output_buf, string'("Start of simulation"));
-                writeline(output_buf, write_col_to_output_buf);
 
                 for i in 0 to (2 ** N_tb)-1 loop
                     for j in 0 to (2 ** N_tb)-1 loop
@@ -62,38 +55,20 @@ architecture arch of tb_ex02_genericRippleCarryAdder is
                         b <= std_logic_vector(to_unsigned(j, b'length));
                         wait for 10 ns;
 
-                        -- Write to file
-                        write(write_col_to_output_buf, string'("a_vec="));
-                        write(write_col_to_output_buf, a);
-                        write(write_col_to_output_buf, string'(", b_vec="));
-                        write(write_col_to_output_buf, b);
-                        write(write_col_to_output_buf, string'(", s_vec="));
-                        write(write_col_to_output_buf, s);
-                        write(write_col_to_output_buf, string'(", cOut="));
-                        write(write_col_to_output_buf, cOut);
+                        sum := i + j;
+                        sum_vec := std_logic_vector(to_unsigned(sum, sum_vec'length));
 
-                        write(write_col_to_output_buf, HT);
-                        write(write_col_to_output_buf, string'("a_int="));
-                        write(write_col_to_output_buf, i);
-                        write(write_col_to_output_buf, string'(", b_int="));
-                        write(write_col_to_output_buf, j);
-                        write(write_col_to_output_buf, string'(", s_int="));
-                        write(write_col_to_output_buf, to_integer(unsigned(s)));
-                        write(write_col_to_output_buf, string'(", cOut="));
-                        write(write_col_to_output_buf, cOut);
-
-                        writeline(output_buf, write_col_to_output_buf);        
+                        res_concat := cOut & s;
+                        for k in N_tb downto 0 loop
+                            assert sum_vec(k) = res_concat(k) report "Test failed for i, j, k = " & integer'image(i) & integer'image(j) &  integer'image(k) severity error;
+                        end loop;
 
                     end loop;
                 end loop;
 
-                -- Close the file containing the results
-                write(write_col_to_output_buf, string'("End of simulation"));
-                writeline(output_buf, write_col_to_output_buf);
-                wait for 100ns;
-                file_close(output_buf);
+            wait;
 
-        end process simulate;
+        end process stim;
 
 end architecture arch;
 
