@@ -1,0 +1,11 @@
+# Simulate the testbench
+vsim work.tb_ALU
+
+# Configure the wave window
+add wave clk reset opcode in_1 in_2 out_1 carry
+
+# Run simulation
+run 200ns
+
+# Control the wave view
+wave zoom full
