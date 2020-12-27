@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity lc_ex03 is
     port(
-        RESET: in std_logic;
         CLK: in std_logic;
+        RESET: in std_logic;
         ENABLE: in std_logic;
         UP: in std_logic;
         OUT_1: out std_logic_vector(1 downto 0)
@@ -16,8 +16,7 @@ architecture arch of lc_ex03 is
     -- 00 ->  01 -> 10 -> 11 -> 00
 
     type states is (state_zero, state_one, state_two, state_three);
-    signal current_state: states := state_zero;
-    signal next_state: states;
+    signal current_state, next_state: states;
 
     begin
 
@@ -54,14 +53,16 @@ architecture arch of lc_ex03 is
 
         update_current_state: process(RESET, CLK, ENABLE)
             begin
-                if (rising_edge(CLK) and (RESET = '1')) then
-                    -- synchronous reset
-                    -- reset is more important than counting --> this condition must always be number 1
-                    current_state <= state_zero;
-                elsif (rising_edge(CLK) and (ENABLE = '1')) then
-                    -- synchronous enable
-                    -- we do not want the state to be updated if ENABLE=0
-                    current_state <= next_state;
+                if (rising_edge(CLK)) then
+                    if (RESET = '1') then
+                      -- synchronous reset
+                        -- reset is more important than counting --> this condition must always be number 1
+                        current_state <= state_zero;
+                    elsif (ENABLE = '1') then
+                        -- synchronous enable
+                        -- we do not want the state to be updated if ENABLE=0
+                        current_state <= next_state;
+                    end if;
                 end if;
         end process update_current_state;
 

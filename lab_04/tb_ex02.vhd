@@ -26,94 +26,66 @@ architecture arch of tb_ex02 is
             OUT_1 => out_1
         );
 
-        stimulus: process
+        stim: process
             begin
 
-                -- Reset
-                reset <= '1'; enable <= '0';
-                clk <= '0';
+                -- Synchronous reset with ENABLE = 0
+                clk <= '0'; reset <= '1'; enable <= '0';
                 wait for 5ns;
-                clk <= '1';
+                clk <= '1'; reset <= '1'; enable <= '0';
                 wait for 5ns;
-                assert((out_1 = "00")) report "Test 1 failed!" severity error;
+                assert out_1 = "00" report "Test 1 failed!" severity error;
 
-                -- Check that the state is not updated if ENABLE='0' (output must always be "00")
-                reset <= '0'; enable <= '0';
-                clk <= '0';
-                wait for 5ns;
-                clk <= '1';
-                wait for 5ns;
-                assert((out_1 = "00")) report "Test 2 failed!" severity error;
-
-                clk <= '0';
-                wait for 5ns;
-                clk <= '1';
-                wait for 5ns;
-                assert((out_1 = "00")) report "Test 3 failed!" severity error;
-
-                -- Check that the state is updated if ENABLE='1' (00 -> 01 -> 10 -> 11 -> 00)
-                reset <= '0'; enable <= '1';
-
+                -- Normal operations (00 -> 01 -> 10 -> 11 -> 00)
                 -- current state: state_zero --> next_state: state_one
-                clk <= '0';
+                clk <= '0'; reset <= '0'; enable <= '1';
                 wait for 5ns;
-                clk <= '1';     -- next_state becomes current_state
+                clk <= '1'; reset <= '0'; enable <= '1';     -- next_state becomes current_state
                 wait for 5ns;
-                assert((out_1 = "01")) report "Test 4 failed!" severity error;
+                assert out_1 = "01" report "Test 2 failed!" severity error;
 
                 -- current state: state_one --> next_state: state_two
-                clk <= '0';
+                clk <= '0'; reset <= '0'; enable <= '1';
                 wait for 5ns;
-                clk <= '1';     -- next_state becomes current_state
+                clk <= '1'; reset <= '0'; enable <= '1';     -- next_state becomes current_state
                 wait for 5ns;
-                assert((out_1 = "10")) report "Test 5 failed!" severity error;
+                assert out_1 = "10" report "Test 3 failed!" severity error;
 
                 -- current state: state_two --> next_state: state_three
-                clk <= '0';
+                clk <= '0'; reset <= '0'; enable <= '1';
                 wait for 5ns;
-                clk <= '1';     -- next_state becomes current_state
+                clk <= '1'; reset <= '0'; enable <= '1';     -- next_state becomes current_state
                 wait for 5ns;
-                assert((out_1 = "11")) report "Test 6 failed!" severity error;
+                assert out_1 = "11" report "Test 4 failed!" severity error;
 
                 -- current state: state_three --> next_state: state_zero
-                clk <= '0';
+                clk <= '0'; reset <= '0'; enable <= '1';
                 wait for 5ns;
-                clk <= '1';     -- next_state becomes current_state
+                clk <= '1'; reset <= '0'; enable <= '1';     -- next_state becomes current_state
                 wait for 5ns;
-                assert((out_1 = "00")) report "Test 7 failed!" severity error;
+                assert out_1 = "00" report "Test 5 failed!" severity error;
 
-                -- Check that reset works when ENABLE='0' (00 -> 01 -> 00)
-                -- current state: state_zero --> next_state: state_one
-                clk <= '0';
+                -- Check that the state is not updated if ENABLE = 0 (output must be the previous one)
+                clk <= '0'; reset <= '0'; enable <= '1';
                 wait for 5ns;
-                clk <= '1';     -- next_state becomes current_state
+                clk <= '1'; reset <= '0'; enable <= '1';
                 wait for 5ns;
-                assert((out_1 = "01")) report "Test 8 failed!" severity error;
+                assert out_1 = "01" report "Test 6 failed!" severity error;
+                clk <= '0'; reset <= '0'; enable <= '0';
+                wait for 5ns;
+                clk <= '1'; reset <= '0'; enable <= '0';
+                wait for 5ns;
+                assert out_1 = "01" report "Test 7 failed!" severity error;
 
-                reset <= '1'; enable <= '0';
-                clk <= '0';
+                -- Synchronous reset with ENABLE = 1
+                clk <= '0'; reset <= '1'; enable <= '1';
                 wait for 5ns;
-                clk <= '1';     -- synchronous reset --> rising edge of clk required!
+                clk <= '1'; reset <= '1'; enable <= '1';
                 wait for 5ns;
-                assert((out_1 = "00")) report "Test 9 failed!" severity error;
+                assert out_1 = "00" report "Test 8 failed!" severity error;
 
-                -- Check that reset works when ENABLE='1' (00 -> 01 -> 00)
-                -- current state: state_zero --> next_state: state_one
-                reset <= '0'; enable <= '1';
-                clk <= '0';
-                wait for 5ns;
-                clk <= '1';     -- next_state becomes current_state
-                wait for 5ns;
-                assert((out_1 = "01")) report "Test 10 failed!" severity error;
+                wait;
 
-                reset <= '1'; enable <= '1';
-                clk <= '0';
-                wait for 5ns;
-                clk <= '1';     -- synchronous reset --> rising edge of clk required!
-                wait for 5ns;
-                assert((out_1 = "00")) report "Test 11 failed!" severity error;
-
-        end process stimulus;
+        end process stim;
 
 end architecture arch;
-

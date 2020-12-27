@@ -23,11 +23,7 @@ architecture arch of lc_ex03_counter is
         proc: process(CLK, RESET, UP)
             begin
                 if (RESET = '1') then
-                    if (UP = '1') then
-                        count <= (others => '0');
-                    else
-                        count <= (others => '1');
-                    end if;
+                    count <= (others => '0');
 
                 elsif (rising_edge(CLK)) then
                     if (UP = '1') then

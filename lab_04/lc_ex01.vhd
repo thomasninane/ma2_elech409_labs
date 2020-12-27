@@ -3,8 +3,8 @@ use ieee.std_logic_1164.all;
 
 entity lc_ex01 is
     port(
-        RESET: in std_logic;
         CLK: in std_logic;
+        RESET: in std_logic;
         SWITCH: in std_logic;
         OUT_1: out std_logic
     );
@@ -26,7 +26,7 @@ architecture arch of lc_ex01 is
                     when active => OUT_1 <= '1';
                 end case;
 
-                -- Assign next_state
+                -- Assign next_state (note that it is immediately computed after the current_state is updated!)
                 if (SWITCH = '1') then
                     case current_state is
                         when inactive => next_state <= active;

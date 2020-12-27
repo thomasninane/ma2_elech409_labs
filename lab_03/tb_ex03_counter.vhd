@@ -70,15 +70,15 @@ architecture arch of tb_ex03_counter is
                 -- Check reset and down
                 clk <= '0'; reset <= '1'; up <= '0';
                 wait for 5 ns;
-                assert q = "1111" report "Test number 2.1 failed" severity error;
+                assert q = "0000" report "Test number 2.1 failed" severity error;
                 clk <= '1'; reset <= '1'; up <= '0';
                 wait for 5 ns;
-                assert q = "1111" report "Test number 2.2 failed" severity error;
+                assert q = "0000" report "Test number 2.2 failed" severity error;
 
                 -- Count down
-                for i in 14 downto -1 loop   -- NOTE: that 'to' has been replaced by 'downto'
+                for i in 15 downto -1 loop   -- NOTE: that 'to' has been replaced by 'downto'
+                    -- when i=15, q goes from "0000" to "1111"
                     -- when i=14, q goes from "1111" to "1110"
-                    -- when i=13, q goes from "1110" to "1101"
                     -- ...
                     -- when i=-1, q goes from "0000" to "1111" (overflow!)
                     clk <= '0'; reset <= '0'; up <= '0';

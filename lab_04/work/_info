@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Thomas_Data/Git/ma2_elech409_labs/lab_03
 Elc_ex01
-Z0 w1608637326
+Z0 w1609080940
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z3 dC:/Thomas_Data/Git/ma2_elech409_labs/lab_04
@@ -17,13 +17,13 @@ Z4 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd
 Z5 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd
 l0
 L4
-VPEo_PYA<<6SC>UXWJhNZZ3
-!s100 Yzj:Z=^zVaUkbn]b]HNIK1
+Vi@nmK;:F5NEk]R9OTzm;70
+!s100 ;mn4M:0bn9?TFKJ`<XMRN0
 Z6 OP;C;10.4a;61
 32
-Z7 !s110 1608637411
+Z7 !s110 1609082069
 !i10b 1
-Z8 !s108 1608637411.000000
+Z8 !s108 1609082069.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd|
 Z10 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd|
 !i113 1
@@ -32,7 +32,7 @@ Z12 tExplicit 1
 Aarch
 R1
 R2
-DEx4 work 7 lc_ex01 0 22 PEo_PYA<<6SC>UXWJhNZZ3
+DEx4 work 7 lc_ex01 0 22 i@nmK;:F5NEk]R9OTzm;70
 l19
 L13
 Va>;meno:fmmKgR8L=kYbL1
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Elc_ex02
-Z13 w1608634532
+Z13 w1609079340
 R1
 R2
 R3
@@ -56,82 +56,82 @@ Z14 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd
 Z15 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd
 l0
 L4
-V^g;F4dXH_X:Bn]R5heoD12
-!s100 KoAg`<zMXQd3UYS[kQ^2o0
+VcS:`8[hanFSdnRNeIi]LS0
+!s100 9S1D9Go[?cCX^dQCTBY@J2
 R6
 32
-R7
+Z16 !s110 1609082070
 !i10b 1
-R8
-Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd|
-Z17 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd|
+Z17 !s108 1609082070.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd|
+Z19 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex02.vhd|
 !i113 1
 R11
 R12
 Aarch
 R1
 R2
-DEx4 work 7 lc_ex02 0 22 ^g;F4dXH_X:Bn]R5heoD12
-l21
+DEx4 work 7 lc_ex02 0 22 cS:`8[hanFSdnRNeIi]LS0
+l20
 L13
-VK0d1MRh:1<P6KT]R[C:An3
-!s100 T<REVFzkg@9K<[mMCX?aH0
+V0^KnKO<=j4UCfb]F@YOdh0
+!s100 `mPL5F_BC7QjdzM`;5Bk60
 R6
 32
-R7
-!i10b 1
-R8
 R16
+!i10b 1
 R17
+R18
+R19
 !i113 1
 R11
 R12
 Elc_ex03
-Z18 w1608637330
+Z20 w1609081082
 R1
 R2
 R3
-Z19 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd
-Z20 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd
+Z21 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd
+Z22 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd
 l0
 L4
-VjIRmghN<KVdn6eH7f0<@_1
-!s100 ;jMPDnCDU08LnK[Sk7Yfh0
+V:m:ZHWYGP>j;BZR8^mBb22
+!s100 ]d_SSL^LQ^`SNSI^ni3Rb1
 R6
 32
-R7
+R16
 !i10b 1
-R8
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd|
-Z22 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd|
+R17
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd|
+Z24 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd|
 !i113 1
 R11
 R12
 Aarch
 R1
 R2
-DEx4 work 7 lc_ex03 0 22 jIRmghN<KVdn6eH7f0<@_1
-l22
+DEx4 work 7 lc_ex03 0 22 :m:ZHWYGP>j;BZR8^mBb22
+l21
 L14
-V:Z0PU5SWmSIY_D_`B7PF@2
-!s100 >bBHKELIE_cS0_GJG:IiK0
+VVR8@LgL0UDb7B^96aIb=[3
+!s100 So0EGV7K@kjo>Zjh4ff3Y0
 R6
 32
-R7
+R16
 !i10b 1
-R8
-R21
-R22
+R17
+R23
+R24
 !i113 1
 R11
 R12
 Etb_ex01
-Z23 w1608636060
+Z25 w1609081972
 R1
 R2
 R3
-Z24 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd
-Z25 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd
+Z26 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd
+Z27 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd
 l0
 L4
 V7jTL5<F::O=h>36X;C=_32
@@ -141,8 +141,8 @@ R6
 R7
 !i10b 1
 R8
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd|
-Z27 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd|
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd|
+Z29 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex01.vhd|
 !i113 1
 R11
 R12
@@ -150,38 +150,38 @@ Aarch
 R1
 R2
 DEx4 work 7 tb_ex01 0 22 7jTL5<F::O=h>36X;C=_32
-l23
+l20
 L7
-Vb[JDif>QJJ38:90A;:@9W1
-!s100 iJPezjX7EZfn9AZAklbm@0
+Vj9deXjJLY4b6JJ3?ODiG]1
+!s100 cEc5E`VlO9`;8gPQia9DC3
 R6
 32
 R7
 !i10b 1
 R8
-R26
-R27
+R28
+R29
 !i113 1
 R11
 R12
 Etb_ex02
-Z28 w1608634745
+Z30 w1609082007
 R1
 R2
 R3
-Z29 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd
-Z30 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd
+Z31 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd
+Z32 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd
 l0
 L4
 VRdn8D^4GRln;caD03RMU;1
 !s100 z91CYDG@Mz_aH71:<V?Hb1
 R6
 32
-R7
+R16
 !i10b 1
-R8
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd|
-Z32 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd|
+R17
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd|
+Z34 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd|
 !i113 1
 R11
 R12
@@ -189,36 +189,36 @@ Aarch
 R1
 R2
 DEx4 work 7 tb_ex02 0 22 Rdn8D^4GRln;caD03RMU;1
-l23
+l21
 L7
-VJd4iJmX3J8A;zS]7KkI1:3
-!s100 EMdD>Kk<aN[zVzaaDTj>E1
+VI0W@Kl`?zT;J>9bnmFj@d2
+!s100 z1ARIIjWMmoIbVVKi`joV0
 R6
 32
-R7
+R16
 !i10b 1
-R8
-R31
-R32
+R17
+R33
+R34
 !i113 1
 R11
 R12
 Etb_ex03
-Z33 w1608634779
+Z35 w1609081868
 R1
 R2
 R3
-Z34 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd
-Z35 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd
+Z36 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd
+Z37 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd
 l0
 L4
 VA]j<CeQ5]JXS:6AEg^c9Q2
 !s100 9O04@=@[N@kUVDOPZcoVE2
 R6
 32
-Z36 !s110 1608637412
+R16
 !i10b 1
-Z37 !s108 1608637412.000000
+R17
 Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd|
 Z39 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex03.vhd|
 !i113 1
@@ -228,15 +228,15 @@ Aarch
 R1
 R2
 Z40 DEx4 work 7 tb_ex03 0 22 A]j<CeQ5]JXS:6AEg^c9Q2
-l25
+l22
 L7
-Z41 V]VSzj7KRA3Cj1Zbz9gMWG3
-Z42 !s100 RgE6<j;aU>DN76Ge?VVYb2
+Z41 VLWnKSnCO:]WT0g?M1@eNb1
+Z42 !s100 PeKYn:G[01A?NV_dhcOA`0
 R6
 32
-R36
+R16
 !i10b 1
-R37
+R17
 R38
 R39
 !i113 1

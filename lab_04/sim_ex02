@@ -2,10 +2,10 @@
 vsim work.tb_ex02
 
 # Configure the wave window
-add wave reset clk enable out_1
+add wave clk reset enable out_1
 
 # Run simulation
-run 110ns
+run 80ns
 
 # Control the wave view
 wave zoom full

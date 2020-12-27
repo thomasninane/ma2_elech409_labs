@@ -5,7 +5,7 @@ vsim work.tb_ex03_counter
 add wave clk reset up q
 
 # Run simulation
-run 340ns
+run 350ns
 
 # Control the wave view
 wave zoom full
