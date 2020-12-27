@@ -2,7 +2,7 @@
 vsim work.tb_ex02p03_mixedRegister
 
 # Configure the wave window
-add wave d load serial rst q
+add wave clk reset load serial d q
 
 # Run simulation
 run 100ns

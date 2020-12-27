@@ -5,40 +5,37 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity lc_ex03_counter is
     generic (N: integer := 4);
     port(
-        UP: in std_logic;
-        RST: in std_logic;
         CLK: in std_logic;
+        RESET: in std_logic;
+        UP: in std_logic;
         Q: out std_logic_vector(N-1 downto 0)
     );
 end entity lc_ex03_counter;
 
 architecture arch of lc_ex03_counter is
 
-    signal cnt: std_logic_vector(N-1 downto 0);
+    signal count: std_logic_vector(N-1 downto 0);
 
     begin
 
-        proc: process(UP, RST, CLK)
+        Q <= count;
+
+        proc: process(CLK, RESET, UP)
             begin
-                if (RST = '1' and UP = '1') then                    
-                    for i in 0 to N-1 loop
-                        cnt(i) <= '0';
-                    end loop;
+                if (RESET = '1') then
+                    if (UP = '1') then
+                        count <= (others => '0');
+                    else
+                        count <= (others => '1');
+                    end if;
 
-                elsif (RST = '1' and UP = '0') then                    
-                    for i in 0 to N-1 loop
-                        cnt(i) <= '1';
-                    end loop;
-                end if;
-
-                if (rising_edge(Clk) and RST = '0' and UP = '1') then
-                    cnt <= cnt + 1;
-                
-                elsif (rising_edge(Clk) and RST = '0' and UP = '0') then
-                    cnt <= cnt - 1;
+                elsif (rising_edge(CLK)) then
+                    if (UP = '1') then
+                        count <= count + 1;
+                    else
+                        count <= count - 1;
+                    end if;
                 end if;
         end process proc;
-        
-        Q <= cnt;
 
 end architecture arch;

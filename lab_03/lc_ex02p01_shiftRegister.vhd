@@ -18,20 +18,21 @@ architecture arch of lc_ex02p01_shiftRegister is
 
     begin
 
-        proc: process(RESET, CLK)
-            begin
-                if RESET = '1' then
-                    shift_register <= (others => '0');
-                    Q <= '0';
+        Q <= shift_register(N-1);
 
-                elsif rising_edge(CLK) then
-                    if ENABLE = '1' then
-                        Q <= shift_register(N-1);
-                        shift_register(0) <= D;
+        proc: process(CLK, RESET, ENABLE)
+            begin
+                if (RESET = '1') then
+                    shift_register <= (others => '0');
+
+                elsif (rising_edge(CLK)) then
+                    if (ENABLE = '1') then
                         
+                        shift_register(0) <= D;
                         for i in 1 to N-1 loop
                             shift_register(i) <= shift_register(i-1);
-                        end loop;   
+                        end loop;
+
                     end if; 
                 end if;
         end process proc;

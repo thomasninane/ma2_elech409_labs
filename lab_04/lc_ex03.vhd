@@ -33,7 +33,7 @@ architecture arch of lc_ex03 is
                     when state_three => OUT_1 <= "11";
                 end case;
 
-                -- Assign next_state
+                -- Compute next_state
                 if UP = '1' then
                     case current_state is
                         when state_zero => next_state <= state_one;

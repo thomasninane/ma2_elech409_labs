@@ -61,88 +61,83 @@ architecture arch of tb_ex02p01_shiftRegister is
                 wait for 5 ns;
                 clk <= '1'; reset <= '0'; enable <= '1'; d <= '0';
                 wait for 5 ns;
+                assert q = '1' report "Test 1 failed" severity error;
 
                 -- What we have in the register so far: "1010".
                 -- The register is full.
                 -- Now, the uncertainty on the error should be gone (could have started by performing a reset...)
 
-                -- Check the first output (1-0101)
+                -- Check the first output (0101)
                 clk <= '0'; reset <= '0'; enable <= '1'; d <= '1';
                 wait for 5 ns;
                 clk <= '1'; reset <= '0'; enable <= '1'; d <= '1';
-                wait for 5 ns;
-                assert q = '1' report "Test 1 failed" severity error;
-
-                -- Check the second output (0-1010)
-                clk <= '0'; reset <= '0'; enable <= '1'; d <= '0';
-                wait for 5 ns;
-                clk <= '1'; reset <= '0'; enable <= '1'; d <= '0';
                 wait for 5 ns;
                 assert q = '0' report "Test 2 failed" severity error;
+                
 
-                -- Check the third output (1-0101)
-                clk <= '0'; reset <= '0'; enable <= '1'; d <= '1';
-                wait for 5 ns;
-                clk <= '1'; reset <= '0'; enable <= '1'; d <= '1';
-                wait for 5 ns;
-                assert q = '1' report "Test 3 failed" severity error;
-
-                -- Check the fourth output (0-1010)
+                -- Check the second output (1010)
                 clk <= '0'; reset <= '0'; enable <= '1'; d <= '0';
                 wait for 5 ns;
                 clk <= '1'; reset <= '0'; enable <= '1'; d <= '0';
                 wait for 5 ns;
-                assert q = '0' report "Test 4 failed" severity error;
+                assert q = '1' report "Test 3 failed" severity error;
+                
 
-                -- Check that nothing happens when enable = 0 (shoud have the same output as above)
+                -- Check the third output (0101)
+                clk <= '0'; reset <= '0'; enable <= '1'; d <= '1';
+                wait for 5 ns;
+                clk <= '1'; reset <= '0'; enable <= '1'; d <= '1';
+                wait for 5 ns;
+                assert q = '0' report "Test 4 failed" severity error;
+                
+
+                -- Check the fourth output (1010)
+                clk <= '0'; reset <= '0'; enable <= '1'; d <= '0';
+                wait for 5 ns;
+                clk <= '1'; reset <= '0'; enable <= '1'; d <= '0';
+                wait for 5 ns;
+                assert q = '1' report "Test 5 failed" severity error;
+                
+
+                -- Check that nothing happens when enable = 0 (shoud have the same output as above: register = 1010)
                 clk <= '0'; reset <= '0'; enable <= '0'; d <= '1';
                 wait for 5 ns;
                 clk <= '1'; reset <= '0'; enable <= '0'; d <= '1';
                 wait for 5 ns;
-                assert q = '0' report "Test 5 failed" severity error;
-
-                -- Check Reset
-                -- Perform one extra normal operation to check that q goes from 1 to 0 when reset
-                clk <= '0'; reset <= '0'; enable <= '1'; d <= '1';
-                wait for 5 ns;
-                clk <= '1'; reset <= '0'; enable <= '1'; d <= '1';
-                wait for 5 ns;
                 assert q = '1' report "Test 6 failed" severity error;
-
+                
+                -- Check Reset
                 -- Reset the register (q = 0 and register=0000)
+
+                -- Check register(3)=0
                 clk <= '0'; reset <= '1'; enable <= '1'; d <= '1';
                 wait for 5 ns;
                 clk <= '1'; reset <= '1'; enable <= '1'; d <= '1';
                 wait for 5 ns;
-                assert q = '0' report "Test 7 failed" severity error;   
-
-                -- Check register(3)=0
-                clk <= '0'; reset <= '0'; enable <= '1'; d <= '1';
-                wait for 5 ns;
-                clk <= '1'; reset <= '0'; enable <= '1'; d <= '1';
-                wait for 5 ns;
-                assert q = '0' report "Test 8 failed" severity error;
+                assert q = '0' report "Test 7 failed" severity error;
+                
 
                 -- Check register(2)=0
                 clk <= '0'; reset <= '0'; enable <= '1'; d <= '1';
                 wait for 5 ns;
                 clk <= '1'; reset <= '0'; enable <= '1'; d <= '1';
                 wait for 5 ns;
-                assert q = '0' report "Test 9 failed" severity error;
+                assert q = '0' report "Test 8 failed" severity error;
+                
 
                 -- Check register(1)=0
                 clk <= '0'; reset <= '0'; enable <= '1'; d <= '1';
                 wait for 5 ns;
                 clk <= '1'; reset <= '0'; enable <= '1'; d <= '1';
                 wait for 5 ns;
-                assert q = '0' report "Test 10 failed" severity error;
+                assert q = '0' report "Test 9 failed" severity error;
 
                 -- Check register(0)=0
                 clk <= '0'; reset <= '0'; enable <= '1'; d <= '1';
                 wait for 5 ns;
                 clk <= '1'; reset <= '0'; enable <= '1'; d <= '1';
                 wait for 5 ns;
-                assert q = '0' report "Test 11 failed" severity error;
+                assert q = '0' report "Test 10 failed" severity error;
 
                 wait;
         end process stim;

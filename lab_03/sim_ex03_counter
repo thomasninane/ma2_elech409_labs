@@ -2,7 +2,7 @@
 vsim work.tb_ex03_counter
 
 # Configure the wave window
-add wave up rst clk q
+add wave clk reset up q
 
 # Run simulation
 run 340ns

@@ -2,7 +2,7 @@
 vsim work.tb_ex01p02_truthTable
 
 # Configure the wave window
-add wave d sel q
+add wave sel d q
 
 # Run simulation
 run 40ns

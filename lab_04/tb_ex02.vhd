@@ -8,22 +8,20 @@ architecture arch of tb_ex02 is
 
     component lc_ex02 is
         port(
-            RESET: in std_logic;
             CLK: in std_logic;
+            RESET: in std_logic;
             ENABLE: in std_logic;
             OUT_1: out std_logic_vector(1 downto 0)
         );
     end component lc_ex02;
 
-    signal reset: std_logic;
-    signal clk: std_logic;
-    signal enable: std_logic;
+    signal clk, reset, enable: std_logic := '0';
     signal out_1: std_logic_vector(1 downto 0);
 
     begin
         uut: lc_ex02 port map(
-            RESET => reset,
             CLK => clk,
+            RESET => reset,
             ENABLE => enable,
             OUT_1 => out_1
         );
