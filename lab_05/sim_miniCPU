@@ -1,0 +1,11 @@
+# Simulate the testbench
+vsim work.tb_miniCPU
+
+# Configure the wave window
+add wave out_clk reset in_1 out_1 alu_opcode rf_opcode reg_sel rf_enable rf_in_sel
+
+# Run simulation
+run 300ns
+
+# Control the wave view
+wave zoom full
