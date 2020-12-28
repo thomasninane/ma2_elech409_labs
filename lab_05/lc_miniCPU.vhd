@@ -2,6 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity lc_miniCPU is
+    generic (clk_period: time := 10 ns);
     port(
         RESET: std_logic;
         IN_1: in std_logic_vector(31 downto 0);
@@ -76,27 +77,15 @@ architecture arch of lc_miniCPU is
         clock: process
             begin
                 clk <= '0';
-                wait for 5ns;
+                wait for clk_period/2;
                 clk <= '1';
-                wait for 5ns;
+                wait for clk_period/2;
         end process clock;
 
-        rf_change_input: process(RF_IN_SEL)
-            begin
-                if RF_IN_SEL = '1' then
-                    rf_in <= IN_1;
-                else
-                    rf_in <= alu_out;
-                end if;
-        end process rf_change_input;
-
-        -- rf_change_output: process(RF_OUT_SEL)
-        --     begin
-        --         if RF_OUT_SEL = '1' then
-        --             OUT_1 <= IN_1;
-        --         else
-        --             rf_in <= alu_out;
-        --         end if;
-        -- end process rf_change_output;
+        with RF_IN_SEL select
+        -- Changes the input of RF (when 0, input comes from the ALU output and when 1, input comes from the top level pin)
+            rf_in <=
+            IN_1 when '1',
+            alu_out when others;
 
 end architecture arch;
