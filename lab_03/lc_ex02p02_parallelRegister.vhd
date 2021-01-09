@@ -29,4 +29,3 @@ architecture arch of lc_ex02p02_parallelRegister is
         end process proc;
 
 end architecture arch;
-

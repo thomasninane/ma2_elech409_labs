@@ -58,4 +58,3 @@ architecture arch of tb_ex03_4bitCarryLookAheadAdder is
         end process stim;
 
 end architecture arch;
-

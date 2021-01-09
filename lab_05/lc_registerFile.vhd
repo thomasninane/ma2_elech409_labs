@@ -81,6 +81,4 @@ architecture arch of lc_registerFile is
                 end if;
         end process proc;
         
-            
-
 end architecture arch;

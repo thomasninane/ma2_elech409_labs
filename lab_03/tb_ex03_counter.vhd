@@ -98,4 +98,3 @@ architecture arch of tb_ex03_counter is
         end process stim;
 
 end architecture arch;
-

@@ -12,8 +12,6 @@ end entity lc_ex02;
 
 architecture arch of lc_ex02 is
 
-    -- 00 ->  01 -> 10 -> 11 -> 00
-
     type states is (state_zero, state_one, state_two, state_three);
     signal current_state, next_state: states;
 

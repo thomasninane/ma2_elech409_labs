@@ -106,4 +106,3 @@ architecture arch of tb_ex02p03_mixedRegister is
         end process stim;
 
 end architecture arch;
-

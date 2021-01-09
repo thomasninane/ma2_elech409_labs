@@ -71,4 +71,3 @@ architecture arch of tb_ex02_genericRippleCarryAdder is
         end process stim;
 
 end architecture arch;
-

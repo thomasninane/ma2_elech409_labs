@@ -20,15 +20,12 @@ architecture arch of lc_ex01p01_mux is
                 if (SEL(1)='0' and SEL(0)='0') then
                     -- sel = 00
                     Q <= D(0);
-
                 elsif (SEL(1)='0' and SEL(0)='1') then
                     -- sel = 01
                     Q <= D(1);
-
                 elsif (SEL(1)='1' and SEL(0)='0') then
                     -- sel = 10
                     Q <= D(2);
-
                 else
                 -- sel = 11
                     Q <= D(3);

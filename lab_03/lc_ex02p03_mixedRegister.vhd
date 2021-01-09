@@ -41,5 +41,3 @@ architecture arch of lc_ex02p03_mixedRegister is
         end process proc;
 
 end architecture arch;
-
-
