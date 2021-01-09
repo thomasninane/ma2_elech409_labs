@@ -17,15 +17,15 @@ architecture arch of lc_ex01 is
     signal next_state: states;
 
     begin
+        -- Output assignement
+        with current_state select
+            OUT_1 <=
+            '0' when inactive,
+            '1' when active;
+            -- '1' when others;
 
         compute_next_state: process(SWITCH, current_state)
             begin
-                -- Assign output for current_case
-                case current_state is
-                    when inactive => OUT_1 <= '0';
-                    when active => OUT_1 <= '1';
-                end case;
-
                 -- Assign next_state (note that it is immediately computed after the current_state is updated!)
                 if (SWITCH = '1') then
                     case current_state is
@@ -34,7 +34,6 @@ architecture arch of lc_ex01 is
                     end case;
                 end if;
         end process compute_next_state;
-
 
         update_current_state: process(RESET, CLK)
             begin

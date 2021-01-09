@@ -18,24 +18,24 @@ architecture arch of lc_ex02 is
     signal current_state, next_state: states;
 
     begin
+        -- Output assignement
+        with current_state select
+            OUT_1 <=
+            "00" when state_zero,
+            "01" when state_one,
+            "10" when state_two,
+            "11" when state_three;
+            -- "11" when others;
 
         compute_next_state: process(current_state)
         -- We want to assign the output as soon as the current_state changes.
         -- We want to calculate the next state as soon as the current_state changes.
             begin
                 case current_state is
-                    when state_zero =>
-                        OUT_1 <= "00";
-                        next_state <= state_one;
-                    when state_one =>
-                        OUT_1 <= "01";
-                        next_state <= state_two;
-                    when state_two =>
-                        OUT_1 <= "10";
-                        next_state <= state_three;
-                    when state_three =>
-                        OUT_1 <= "11";
-                        next_state <= state_zero;
+                    when state_zero => next_state <= state_one;
+                    when state_one => next_state <= state_two;
+                    when state_two => next_state <= state_three;
+                    when state_three => next_state <= state_zero;
                 end case;
         end process compute_next_state;
 

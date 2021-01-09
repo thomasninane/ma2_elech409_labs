@@ -19,20 +19,19 @@ architecture arch of lc_ex03 is
     signal current_state, next_state: states;
 
     begin
+        -- Output assignement
+        with current_state select
+            OUT_1 <=
+            "00" when state_zero,
+            "01" when state_one,
+            "10" when state_two,
+            "11" when state_three;
+            -- "11" when others;
 
         compute_next_state: process(current_state, UP)
         -- We want to calculate the next state as soon as the current_state changes.
         -- If the signal UP changes, we want to recalculate the next state!
             begin
-                -- Assign output for current_case
-                case current_state is
-                    when state_zero => OUT_1 <= "00";
-                    when state_one => OUT_1 <= "01";
-                    when state_two => OUT_1 <= "10";
-                    when state_three => OUT_1 <= "11";
-                end case;
-
-                -- Compute next_state
                 if UP = '1' then
                     case current_state is
                         when state_zero => next_state <= state_one;
