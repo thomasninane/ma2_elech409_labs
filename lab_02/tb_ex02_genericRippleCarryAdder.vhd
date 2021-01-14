@@ -18,9 +18,9 @@ architecture arch of tb_ex02_genericRippleCarryAdder is
             N: integer := 4
         );
         port(
-            a: in std_logic_vector(N_tb-1 downto 0);
-            b: in std_logic_vector(N_tb-1 downto 0);
-            s: out std_logic_vector(N_tb-1 downto 0);
+            a: in std_logic_vector(N-1 downto 0);
+            b: in std_logic_vector(N-1 downto 0);
+            s: out std_logic_vector(N-1 downto 0);
             cOut: out std_logic
         );
     end component lc_ex02_genericRippleCarryAdder;

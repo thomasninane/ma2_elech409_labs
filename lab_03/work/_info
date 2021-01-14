@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Thomas_Data/Git/ma2_elech409_labs/lab_02
 Elc_ex01p01_mux
-Z0 w1609070409
+Z0 w1610190915
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z3 dC:/Thomas_Data/Git/ma2_elech409_labs/lab_03
@@ -21,9 +21,9 @@ VHbi_Te7eJ8jl<N8<PfUJi1
 !s100 ^PeX8oUU@EV7ST?eg?Q1R1
 Z6 OP;C;10.4a;61
 32
-Z7 !s110 1609082319
+Z7 !s110 1610442999
 !i10b 1
-Z8 !s108 1609082319.000000
+Z8 !s108 1610442999.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/lc_ex01p01_mux.vhd|
 Z10 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/lc_ex01p01_mux.vhd|
 !i113 1
@@ -35,8 +35,8 @@ R2
 DEx4 work 14 lc_ex01p01_mux 0 22 Hbi_Te7eJ8jl<N8<PfUJi1
 l15
 L14
-V0<gNX9oXiokHkeMPXC6E61
-!s100 @@T?R_JCVAQA1ni1Yh?Tj1
+V4kznWJ_Q3zacc2BQd@Xm30
+!s100 hcbWCGkSd19L=e`A9BVYn0
 R6
 32
 R7
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Elc_ex01p02_truthtable
-Z13 w1609070251
+Z13 w1610442993
 R1
 R2
 R3
@@ -74,8 +74,8 @@ R2
 DEx4 work 21 lc_ex01p02_truthtable 0 22 8`g9Rk`FhijDW7IWJLefz3
 l16
 L15
-Vemj;nladIacK63OZWU=591
-!s100 ]>Dd@Mn8d[FdZEGjKKYhW3
+VoX7j=4ZMAAU^_liSF`nb43
+!s100 g^jNCRj=7@G_bDK7<1[WU3
 R6
 32
 R7
@@ -87,7 +87,7 @@ R17
 R11
 R12
 Elc_ex01p03_singledflipflop
-Z18 w1609067192
+Z18 w1610191239
 R1
 R2
 R3
@@ -126,7 +126,7 @@ R22
 R11
 R12
 Elc_ex02p01_shiftregister
-Z23 w1609068145
+Z23 w1610191229
 R1
 R2
 R3
@@ -138,9 +138,9 @@ VChf3aJjjebaVA<6[G9X<02
 !s100 =NmJ<B1XleX;g=BU_l]o@2
 R6
 32
-Z26 !s110 1609082320
+Z26 !s110 1610443000
 !i10b 1
-Z27 !s108 1609082320.000000
+Z27 !s108 1610443000.000000
 Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/lc_ex02p01_shiftRegister.vhd|
 Z29 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/lc_ex02p01_shiftRegister.vhd|
 !i113 1
@@ -165,7 +165,7 @@ R29
 R11
 R12
 Elc_ex02p02_parallelregister
-Z30 w1609068006
+Z30 w1610191226
 R1
 R2
 R3
@@ -204,7 +204,7 @@ R34
 R11
 R12
 Elc_ex02p03_mixedregister
-Z35 w1609068102
+Z35 w1610191223
 R1
 R2
 R3
@@ -243,7 +243,7 @@ R39
 R11
 R12
 Elc_ex03_counter
-Z40 w1609082306
+Z40 w1610191246
 Z41 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z42 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R1
@@ -257,11 +257,11 @@ VK5b73DQTe::KYnj4IoMgL1
 !s100 O0VAOz9ML4UD=U6g@nfG@2
 R6
 32
-R26
+Z45 !s110 1610443001
 !i10b 1
-R27
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/lc_ex03_counter.vhd|
-Z46 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/lc_ex03_counter.vhd|
+Z46 !s108 1610443001.000000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/lc_ex03_counter.vhd|
+Z48 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/lc_ex03_counter.vhd|
 !i113 1
 R11
 R12
@@ -277,21 +277,21 @@ V`ccR3dT@@7XbCYoKI`L=W2
 !s100 oDzUcUTebDdebMoz5<;PQ3
 R6
 32
-R26
-!i10b 1
-R27
 R45
+!i10b 1
 R46
+R47
+R48
 !i113 1
 R11
 R12
 Etb_ex01p01_mux
-Z47 w1609070317
+Z49 w1609070317
 R1
 R2
 R3
-Z48 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p01_mux.vhd
-Z49 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p01_mux.vhd
+Z50 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p01_mux.vhd
+Z51 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p01_mux.vhd
 l0
 L4
 V@gYT6UfBEf?X`O7Ll@QSg3
@@ -301,8 +301,8 @@ R6
 R7
 !i10b 1
 R8
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p01_mux.vhd|
-Z51 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p01_mux.vhd|
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p01_mux.vhd|
+Z53 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p01_mux.vhd|
 !i113 1
 R11
 R12
@@ -319,18 +319,18 @@ R6
 R7
 !i10b 1
 R8
-R50
-R51
+R52
+R53
 !i113 1
 R11
 R12
 Etb_ex01p02_truthtable
-Z52 w1609070448
+Z54 w1610191254
 R1
 R2
 R3
-Z53 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p02_truthTable.vhd
-Z54 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p02_truthTable.vhd
+Z55 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p02_truthTable.vhd
+Z56 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p02_truthTable.vhd
 l0
 L4
 VKGbcFLk6V[=;L>=TzWc]02
@@ -340,8 +340,8 @@ R6
 R7
 !i10b 1
 R8
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p02_truthTable.vhd|
-Z56 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p02_truthTable.vhd|
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p02_truthTable.vhd|
+Z58 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p02_truthTable.vhd|
 !i113 1
 R11
 R12
@@ -358,18 +358,18 @@ R6
 R7
 !i10b 1
 R8
-R55
-R56
+R57
+R58
 !i113 1
 R11
 R12
 Etb_ex01p03_singledflipflop
-Z57 w1608905979
+Z59 w1610191257
 R1
 R2
 R3
-Z58 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p03_singleDFlipFlop.vhd
-Z59 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p03_singleDFlipFlop.vhd
+Z60 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p03_singleDFlipFlop.vhd
+Z61 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p03_singleDFlipFlop.vhd
 l0
 L4
 V1RNfGBAkk[YNR8o:>WKgg2
@@ -379,8 +379,8 @@ R6
 R26
 !i10b 1
 R8
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p03_singleDFlipFlop.vhd|
-Z61 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p03_singleDFlipFlop.vhd|
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p03_singleDFlipFlop.vhd|
+Z63 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex01p03_singleDFlipFlop.vhd|
 !i113 1
 R11
 R12
@@ -397,18 +397,18 @@ R6
 R26
 !i10b 1
 R8
-R60
-R61
+R62
+R63
 !i113 1
 R11
 R12
 Etb_ex02p01_shiftregister
-Z62 w1609069436
+Z64 w1609069436
 R1
 R2
 R3
-Z63 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p01_shiftRegister.vhd
-Z64 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p01_shiftRegister.vhd
+Z65 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p01_shiftRegister.vhd
+Z66 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p01_shiftRegister.vhd
 l0
 L4
 VU81TTPbPZh3M^b6Y<6Zk62
@@ -418,8 +418,8 @@ R6
 R26
 !i10b 1
 R27
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p01_shiftRegister.vhd|
-Z66 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p01_shiftRegister.vhd|
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p01_shiftRegister.vhd|
+Z68 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p01_shiftRegister.vhd|
 !i113 1
 R11
 R12
@@ -436,18 +436,18 @@ R6
 R26
 !i10b 1
 R27
-R65
-R66
+R67
+R68
 !i113 1
 R11
 R12
 Etb_ex02p02_parallelregister
-Z67 w1609069862
+Z69 w1610191262
 R1
 R2
 R3
-Z68 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p02_parallelRegister.vhd
-Z69 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p02_parallelRegister.vhd
+Z70 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p02_parallelRegister.vhd
+Z71 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p02_parallelRegister.vhd
 l0
 L4
 VUh4a784e:4Nl>OLjAXN@G3
@@ -457,8 +457,8 @@ R6
 R26
 !i10b 1
 R27
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p02_parallelRegister.vhd|
-Z71 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p02_parallelRegister.vhd|
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p02_parallelRegister.vhd|
+Z73 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p02_parallelRegister.vhd|
 !i113 1
 R11
 R12
@@ -475,29 +475,29 @@ R6
 R26
 !i10b 1
 R27
-R70
-R71
+R72
+R73
 !i113 1
 R11
 R12
 Etb_ex02p03_mixedregister
-Z72 w1609074572
+Z74 w1610191266
 R1
 R2
 R3
-Z73 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p03_mixedRegister.vhd
-Z74 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p03_mixedRegister.vhd
+Z75 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p03_mixedRegister.vhd
+Z76 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p03_mixedRegister.vhd
 l0
 L4
 V>`NJ5Z8XLAE[cY3_0`K782
 !s100 G82GO23k_1_3jJoC21z@H3
 R6
 32
-R26
+R45
 !i10b 1
 R27
-Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p03_mixedRegister.vhd|
-Z76 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p03_mixedRegister.vhd|
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p03_mixedRegister.vhd|
+Z78 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex02p03_mixedRegister.vhd|
 !i113 1
 R11
 R12
@@ -511,38 +511,38 @@ V]`TiZ@oh@I<O?`191Y]LV3
 !s100 QezQB@YgNaXDTKb5UX;E>3
 R6
 32
-R26
+R45
 !i10b 1
 R27
-R75
-R76
+R77
+R78
 !i113 1
 R11
 R12
 Etb_ex03_counter
-Z77 w1609082191
-Z78 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z79 w1610191269
+Z80 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R1
 R2
 R3
-Z79 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex03_counter.vhd
-Z80 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex03_counter.vhd
+Z81 8C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex03_counter.vhd
+Z82 FC:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex03_counter.vhd
 l0
 L5
 VN0[dT6_I?SQ>An^DEHU9b2
 !s100 g6m;^D`D259Oj2UhI@eFS0
 R6
 32
-Z81 !s110 1609082321
+R45
 !i10b 1
-Z82 !s108 1609082321.000000
+R46
 Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex03_counter.vhd|
 Z84 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_03/tb_ex03_counter.vhd|
 !i113 1
 R11
 R12
 Aarch
-R78
+R80
 R1
 R2
 Z85 DEx4 work 15 tb_ex03_counter 0 22 N0[dT6_I?SQ>An^DEHU9b2
@@ -552,9 +552,9 @@ Z86 Vn3]d8[gU2mD<`J4@oMYOd3
 Z87 !s100 nobJj8k`H4;8RCV6Fg0k[1
 R6
 32
-R81
+R45
 !i10b 1
-R82
+R46
 R83
 R84
 !i113 1

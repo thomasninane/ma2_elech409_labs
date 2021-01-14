@@ -21,9 +21,9 @@ Vi@nmK;:F5NEk]R9OTzm;70
 !s100 ;mn4M:0bn9?TFKJ`<XMRN0
 Z6 OP;C;10.4a;61
 32
-Z7 !s110 1610187331
+Z7 !s110 1610383907
 !i10b 1
-Z8 !s108 1610187331.000000
+Z8 !s108 1610383907.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd|
 Z10 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex01.vhd|
 !i113 1
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Elc_ex02
-Z13 w1610187278
+Z13 w1610383904
 R1
 R2
 R3
@@ -72,10 +72,10 @@ Aarch
 R1
 R2
 DEx4 work 7 lc_ex02 0 22 cS:`8[hanFSdnRNeIi]LS0
-l20
+l18
 L13
-VBd2kW7IYcU>Yi4TY7jjz^3
-!s100 b4b`l0JWnl9Egoi5alUP?0
+VM0nYdDeO;8@QX9PD6Zezi3
+!s100 hGzA_UV5c9]0WX9;dOG6c2
 R6
 32
 R7
@@ -87,7 +87,7 @@ R17
 R11
 R12
 Elc_ex03
-Z18 w1610187322
+Z18 w1610191290
 R1
 R2
 R3
@@ -99,9 +99,9 @@ V:m:ZHWYGP>j;BZR8^mBb22
 !s100 ]d_SSL^LQ^`SNSI^ni3Rb1
 R6
 32
-Z21 !s110 1610187332
+Z21 !s110 1610383908
 !i10b 1
-Z22 !s108 1610187332.000000
+Z22 !s108 1610383908.000000
 Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd|
 Z24 !s107 C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/lc_ex03.vhd|
 !i113 1
@@ -111,10 +111,10 @@ Aarch
 R1
 R2
 DEx4 work 7 lc_ex03 0 22 :m:ZHWYGP>j;BZR8^mBb22
-l21
+l19
 L14
-VQFV44C>3Z_2hzW>ajaAD;3
-!s100 H[EgaE@iVRRMJ06zD4@4V1
+V?NKVjLiB]8j^9C=Lgcgk00
+!s100 kfSIa47PIY:cQDHZ9cO0:2
 R6
 32
 R21
@@ -126,7 +126,7 @@ R24
 R11
 R12
 Etb_ex01
-Z25 w1609081972
+Z25 w1610191295
 R1
 R2
 R3
@@ -177,7 +177,7 @@ VRdn8D^4GRln;caD03RMU;1
 !s100 z91CYDG@Mz_aH71:<V?Hb1
 R6
 32
-R21
+R7
 !i10b 1
 R8
 Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Thomas_Data/Git/ma2_elech409_labs/lab_04/tb_ex02.vhd|
@@ -195,7 +195,7 @@ VI0W@Kl`?zT;J>9bnmFj@d2
 !s100 z1ARIIjWMmoIbVVKi`joV0
 R6
 32
-R21
+R7
 !i10b 1
 R8
 R33

@@ -22,4 +22,9 @@ architecture arch of lc_ex01p02_truthTable is
             D(2) when "10",     -- sel = 10
             D(3) when others;   -- sel = 11
 
+        -- Q <= D(0) when SEL = "00" else
+        --     D(1) when SEL = "01" else
+        --         D(2) when SEL = "10" else
+        --             D(3);
+
 end architecture arch;

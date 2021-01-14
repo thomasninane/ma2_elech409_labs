@@ -18,6 +18,8 @@ architecture arch of lc_ex03 is
 
     begin
         -- Output assignement
+        -- Output is mapped to the state only (does not depend of the input) --> it is a Moore machine here...
+        -- Here, the output value can be directly mapped to the state.
         with current_state select
             OUT_1 <=
             "00" when state_zero,

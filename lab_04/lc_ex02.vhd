@@ -17,13 +17,18 @@ architecture arch of lc_ex02 is
 
     begin
         -- Output assignement
-        with current_state select
-            OUT_1 <=
-            "00" when state_zero,
-            "01" when state_one,
-            "10" when state_two,
-            "11" when state_three;
-            -- "11" when others;
+        -- with current_state select
+        --     OUT_1 <=
+        --     "00" when state_zero,
+        --     "01" when state_one,
+        --     "10" when state_two,
+        --     "11" when state_three;
+        --     -- "11" when others;
+
+        OUT_1 <= "00" when current_state = state_zero else
+                "01" when current_state = state_one else
+                "10" when current_state = state_two else
+                "11" when current_state = state_three;
 
         compute_next_state: process(current_state)
         -- We want to assign the output as soon as the current_state changes.
